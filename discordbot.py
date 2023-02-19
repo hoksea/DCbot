@@ -7,7 +7,7 @@ TOKEN = os.environ['TOKEN']
 client = discord.Client()
 
 intents = discord.Intents.default()
-intents.message_content = True
+intents.messages = True
 client = discord.Client(intents=intents)
 
 # 起動時呼叫
